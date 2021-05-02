@@ -1,0 +1,35 @@
+.headerUpper {
+  padding: 100px 50px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerPara {
+  margin: 0;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 300;
+  margin-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+  color: #0f2137;
+  text-align: center;
+}
+
+.headerLower {
+  background-image: url("/shape-left.png"), url("/shape-right.png");
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 36%, 32%;
+}
+
+.bannerImage {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

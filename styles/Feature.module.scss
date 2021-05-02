@@ -1,0 +1,9 @@
+.feature {
+  padding: 100px 0;
+}
+
+.featureCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
