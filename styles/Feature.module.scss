@@ -2,6 +2,13 @@
   padding: 100px 0;
 }
 
+.featureHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .featureCardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

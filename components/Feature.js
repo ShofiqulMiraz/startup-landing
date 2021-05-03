@@ -38,8 +38,10 @@ export default function Feature() {
     <section className={styles.feature}>
       <Container>
         <SectionTop>
-          <SectionSubTitle text="WHATS THE FUNCTION" />
-          <SectionTitle text="Meet the feature of our product" />
+          <div className={styles.featureHead}>
+            <SectionSubTitle text="WHATS THE FUNCTION" />
+            <SectionTitle text="Meet the feature of our product" />
+          </div>
         </SectionTop>
         <div className={styles.featureCardGrid}>
           {features.map((feature, index) => (

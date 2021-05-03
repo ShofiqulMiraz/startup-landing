@@ -12,3 +12,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.modal-video-close-btn {
+  cursor: pointer;
+}
+
+/* .modal-video-movie-wrap {
+  padding: 50px;
+} */
