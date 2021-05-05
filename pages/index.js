@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Feature from "../components/Feature";
 import Header from "../components/Header";
+import QualityFeature from "../components/QualityFeature";
 import Services from "../components/Services";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <Feature />
       <Services />
+      <QualityFeature />
     </>
   );
 }

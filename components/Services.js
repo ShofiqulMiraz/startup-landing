@@ -35,14 +35,14 @@ export default function Services() {
             alt="service"
             className={styles.serviceLeftImage}
           />
-          <button
+          <div
             className={styles.videoBtn}
             onClick={() => setVideoOpen(true)}
           >
             <span>
               <IoIosPlay />
             </span>
-          </button>
+          </div>
         </div>
         <ModalVideo
           channel="youtube"

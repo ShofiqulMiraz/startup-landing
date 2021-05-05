@@ -1,0 +1,19 @@
+.qualityFeature {
+  padding: 100px 0;
+}
+
+.qualityFeatureHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qualityFeatureCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 50px;
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
