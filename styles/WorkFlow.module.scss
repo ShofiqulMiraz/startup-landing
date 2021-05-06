@@ -1,0 +1,30 @@
+.workFlow {
+  padding: 70px 0;
+  background-color: #ea3a60;
+  background-image: url("/patternBG.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.workFlowHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p,
+  h3 {
+    color: white;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 641px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

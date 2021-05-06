@@ -1,0 +1,42 @@
+.WorkFlowCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media (max-width: 641px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.index {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 23px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234582;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.55px;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: white;
+  opacity: 0.75;
+}

@@ -1,0 +1,36 @@
+.coreFeature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 50px;
+  @media (max-width: 940px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.coreFeatureLeft {
+  padding: 50px;
+  h3 {
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+}
+
+.coreFeatureLeftPara {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  line-height: 1.75;
+}
+
+.coreFeatureRightImage {
+  max-width: 100%;
+  height: auto;
+  padding: 0 20px;
+  @media (max-width: 940px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
