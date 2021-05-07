@@ -8,3 +8,82 @@
   align-items: center;
   justify-content: center;
 }
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.buttonGroupInner {
+  display: flex;
+  padding: 7px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f7f8fb;
+  button {
+    border: 0;
+    padding: 15px 27px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: -0.24px;
+    transition: all 0.3s;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.activeBtn {
+  color: #0f2137;
+  background-color: #fff;
+  box-shadow: 0 3px 4px rgba(38, 78, 118, 0.1);
+}
+
+.pricingWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pricingItem {
+  display: flex;
+  flex-shrink: 0;
+  flex: 1 1 auto;
+}
+
+.buttonGroupContainer {
+  display: flex;
+  width: 100%;
+}
+
+.buttonGroupSlider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -4px;
+  @media (min-width: 1023px) {
+    display: none;
+  }
+  & > button {
+    background: transparent;
+    border: 0px solid;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 2px;
+    color: #bbc7d7;
+    transition: all 0.25s;
+    &:hover {
+      color: black;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}

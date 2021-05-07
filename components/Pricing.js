@@ -1,11 +1,18 @@
 import styles from "../styles/Pricing.module.scss";
-import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
+import {
+  IoIosCheckmarkCircle,
+  IoIosCloseCircle,
+  IoIosArrowRoundBack,
+  IoIosArrowRoundForward,
+} from "react-icons/io";
+
 import Carousel from "react-multi-carousel";
 import Container from "./Container";
 import SectionTop from "./SectionTop";
 import SectionSubTitle from "./SectionSubTitle";
 import SectionTitle from "./SectionTitle";
 import { useState } from "react";
+import PriceCard from "./PriceCard";
 
 const packages = {
   monthly: [
@@ -78,7 +85,6 @@ const packages = {
     },
     {
       id: 3,
-      header: "Suggested",
       headerIcon: <IoIosCheckmarkCircle />,
       name: "Pro Master",
       description: "For pro level developers",
@@ -183,7 +189,6 @@ const packages = {
     },
     {
       id: 3,
-      header: "Suggested",
       headerIcon: <IoIosCheckmarkCircle />,
       name: "Pro Master",
       description: "For pro level developers",
@@ -269,7 +274,7 @@ export default function Pricing() {
     slidesToSlide: 1,
     items: 3,
     containerClass: "carousel-container",
-    // customButtonGroup: <ButtonGroup />,
+    customButtonGroup: <ButtonGroup />,
     dotListClass: "",
     focusOnSelect: false,
     infinite: false,
@@ -288,10 +293,56 @@ export default function Pricing() {
         <SectionTop>
           <div className={styles.pricingHead}>
             <SectionSubTitle text="PRICING PLAN" />
-            <SectionTitle text="Choose your pricing plan" />
+            <SectionTitle text="Choose Your Pricing Plan" />
           </div>
         </SectionTop>
+        <div className={styles.buttonGroup}>
+          <div className={styles.buttonGroupInner}>
+            <button
+              className={state.active === "monthly" ? styles.activeBtn : ""}
+              type="button"
+              aria-label="Monthly"
+              onClick={() => handlePricingPlan("monthly")}
+            >
+              Monthly Plan
+            </button>
+            <button
+              className={state.active === "annual" ? styles.activeBtn : ""}
+              type="button"
+              aria-label="Annual"
+              onClick={() => handlePricingPlan("annual")}
+            >
+              Annual Plan
+            </button>
+          </div>
+        </div>
+        <div className={styles.pricingWrapper}>
+          <Carousel {...sliderParams}>
+            {state.pricingPlan.map((plan) => (
+              <div key={plan.id} className={styles.pricingItem}>
+                <PriceCard plan={plan} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </Container>
     </section>
+  );
+}
+
+function ButtonGroup({ next, previous }) {
+  return (
+    <div className={styles.buttonGroupContainer}>
+      <Container>
+        <div className={styles.buttonGroupSlider}>
+          <button onClick={previous} aria-label="Previous">
+            <IoIosArrowRoundBack />
+          </button>
+          <button onClick={next} aria-label="Next">
+            <IoIosArrowRoundForward />
+          </button>
+        </div>
+      </Container>
+    </div>
   );
 }

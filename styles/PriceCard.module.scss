@@ -1,0 +1,79 @@
+.pricingBox {
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s;
+  padding: 35px 25px;
+  width: 100%;
+  margin: 40px 10px 5px 10px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 412px;
+    height: 100%;
+    border: 1px solid #264e761a;
+    border-radius: inherit;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    box-shadow: 0px 4px 25px #264e761a !important;
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+
+.pricingHeader {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  p {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
+
+.listIcon {
+  width: 25px;
+  height: auto;
+  color: #ea3a60;
+  padding: 0;
+  font-size: 20px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  & > span {
+    position: relative;
+    padding-left: 3px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+.buttonGroup {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.freeTrial {
+  color: black;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 0;
+  cursor: pointer;
+}

@@ -13,6 +13,8 @@ a {
   text-decoration: none;
 }
 
+/* Overriding package CSS */
+
 .modal-video-close-btn {
   cursor: pointer;
 }
@@ -20,3 +22,7 @@ a {
 /* .modal-video-movie-wrap {
   padding: 50px;
 } */
+
+.carousel-container {
+  width: 100% !important;
+}
