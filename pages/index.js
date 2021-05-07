@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Pricing from "../components/Pricing";
 import QualityFeature from "../components/QualityFeature";
 import Services from "../components/Services";
+import Team from "../components/Team";
+import Testimonial from "../components/Testimonial";
 import WorkFlow from "../components/WorkFlow";
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
       <CoreFeature />
       <WorkFlow />
       <Pricing />
+      <Team />
+      <Testimonial />
     </>
   );
 }

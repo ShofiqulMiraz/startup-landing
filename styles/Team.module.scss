@@ -1,0 +1,91 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: ease-in-out 0.4s;
+  border-radius: 8px;
+  position: relative;
+  padding: 30px 50px;
+  &:hover {
+    box-shadow: 0 4px 10px rgba(39, 83, 123, 0.12);
+    .icon {
+      opacity: 1;
+    }
+    .name,
+    .designation {
+      color: #ea3a60;
+    }
+  }
+}
+
+.memberThumb {
+  max-width: 130px;
+  max-height: 130px;
+  flex-shrink: 0;
+  border: 2px solid #ea3a60;
+  border-radius: 50%;
+}
+
+.infoWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+  transition: color 0.25s;
+  margin: 0.7rem 0;
+}
+
+.designation {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #343d48;
+  transition: color 0.25s;
+}
+.socialShare {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+  padding-top: 2px;
+}
+
+.icon {
+  color: #ea3a60;
+  line-height: 1em;
+  transition: all 0.25s;
+  padding-top: 15px;
+  opacity: 0;
+  &:hover {
+    color: #ea3a60;
+  }
+}
