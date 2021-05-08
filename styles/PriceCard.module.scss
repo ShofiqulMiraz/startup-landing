@@ -5,13 +5,13 @@
   padding: 35px 25px;
   width: 100%;
   margin: 40px 10px 5px 10px;
+  min-height: 412px;
   &::before {
     position: absolute;
     content: "";
     width: 100%;
     top: 0;
     left: 0;
-    min-height: 412px;
     height: 100%;
     border: 1px solid #264e761a;
     border-radius: inherit;

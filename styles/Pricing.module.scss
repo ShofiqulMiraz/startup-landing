@@ -58,32 +58,3 @@
   flex-shrink: 0;
   flex: 1 1 auto;
 }
-
-.buttonGroupContainer {
-  display: flex;
-  width: 100%;
-}
-
-.buttonGroupSlider {
-  display: flex;
-  justify-content: center;
-  margin-bottom: -4px;
-  @media (min-width: 1023px) {
-    display: none;
-  }
-  & > button {
-    background: transparent;
-    border: 0px solid;
-    font-size: 40px;
-    cursor: pointer;
-    padding: 2px;
-    color: #bbc7d7;
-    transition: all 0.25s;
-    &:hover {
-      color: black;
-    }
-    &:focus {
-      outline: 0;
-    }
-  }
-}

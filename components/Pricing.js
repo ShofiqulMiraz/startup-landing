@@ -1,10 +1,5 @@
 import styles from "../styles/Pricing.module.scss";
-import {
-  IoIosCheckmarkCircle,
-  IoIosCloseCircle,
-  IoIosArrowRoundBack,
-  IoIosArrowRoundForward,
-} from "react-icons/io";
+import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 
 import Carousel from "react-multi-carousel";
 import Container from "./Container";
@@ -13,6 +8,7 @@ import SectionSubTitle from "./SectionSubTitle";
 import SectionTitle from "./SectionTitle";
 import { useState } from "react";
 import PriceCard from "./PriceCard";
+import PricingButtonGroup from "./PricingButtonGroup";
 
 const packages = {
   monthly: [
@@ -274,7 +270,7 @@ export default function Pricing() {
     slidesToSlide: 1,
     items: 3,
     containerClass: "carousel-container",
-    customButtonGroup: <ButtonGroup />,
+    customButtonGroup: <PricingButtonGroup />,
     dotListClass: "",
     focusOnSelect: false,
     infinite: false,
@@ -327,22 +323,5 @@ export default function Pricing() {
         </div>
       </Container>
     </section>
-  );
-}
-
-function ButtonGroup({ next, previous }) {
-  return (
-    <div className={styles.buttonGroupContainer}>
-      <Container>
-        <div className={styles.buttonGroupSlider}>
-          <button onClick={previous} aria-label="Previous">
-            <IoIosArrowRoundBack />
-          </button>
-          <button onClick={next} aria-label="Next">
-            <IoIosArrowRoundForward />
-          </button>
-        </div>
-      </Container>
-    </div>
   );
 }

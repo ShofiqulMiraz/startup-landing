@@ -1,0 +1,40 @@
+.bottom_area {
+  border-top: 1px solid #646262;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  & > nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.link {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.35s;
+  display: block;
+  line-height: 1.5;
+  padding: 10px;
+  color: #343d48;
+  &:hover {
+    color: #ea3a60;
+  }
+}
+
+.copyright {
+  font-size: 15px;
+  width: 100%;
+  color: #1f262e;
+}

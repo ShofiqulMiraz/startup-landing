@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Team from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import WorkFlow from "../components/WorkFlow";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Pricing />
       <Team />
       <Testimonial />
+      <Footer />
     </>
   );
 }
