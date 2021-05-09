@@ -9,6 +9,7 @@ import Team from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import WorkFlow from "../components/WorkFlow";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Head>
         <title>StartUp Landing</title>
       </Head>
-
+      <Nav />
       <Header />
       <Feature />
       <Services />

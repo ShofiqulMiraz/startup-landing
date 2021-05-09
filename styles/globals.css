@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -15,14 +15,17 @@ a {
 
 /* Overriding package CSS */
 
+/* react modal video */
 .modal-video-close-btn {
   cursor: pointer;
 }
 
-/* .modal-video-movie-wrap {
-  padding: 50px;
-} */
-
+/* react multi carousel */
 .carousel-container {
   width: 100% !important;
+}
+
+/* nprogress */
+#nprogress .bar {
+  height: 3px !important;
 }
