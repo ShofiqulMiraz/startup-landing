@@ -1,5 +1,5 @@
 .nav {
-  padding: 1vh 15px;
+  padding: 1vh 0.9375rem;
   display: flex;
   justify-content: space-between;
   background-color: #f0efef;
@@ -16,13 +16,13 @@
 
 .menuopen {
   cursor: pointer;
-  padding: 3px 10px 0 0;
+  padding: 0.1875rem 0.625rem 0 0;
 
   & > img {
-    width: 29px;
-    height: 29px;
+    width: 1.8125rem;
+    height: 1.8125rem;
   }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 43.75rem) {
     display: none;
   }
 }
@@ -30,12 +30,12 @@
 .menuclose {
   & > img {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 0.9375rem;
+    right: 1.25rem;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    @media only screen and (min-width: 700px) {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    @media only screen and (min-width: 43.75rem) {
       display: none;
     }
   }
@@ -55,7 +55,7 @@
   z-index: 200;
   margin: 0;
   transition: all 0.5s ease;
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 43.75rem) {
     display: none;
   }
 }
@@ -74,7 +74,7 @@
   z-index: 200;
   margin: 0;
   transition: all 0.5s ease;
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 43.75rem) {
     position: initial;
     width: initial;
     height: initial;
@@ -91,15 +91,15 @@
   & > a {
     text-transform: capitalize;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #343d48;
     font-weight: 600;
   }
   &:not(:last-child) {
-    margin-bottom: 10px;
-    @media only screen and (min-width: 700px) {
+    margin-bottom: 0.625rem;
+    @media only screen and (min-width: 43.75rem) {
       margin-bottom: 0;
-      margin-right: 30px;
+      margin-right: 1.875rem;
     }
   }
 }

@@ -1,5 +1,5 @@
 .workFlow {
-  padding: 70px 0;
+  padding: 4.375rem 0;
   background-color: var(--color-primary);
   background-image: url("/patternBG.png");
   background-repeat: no-repeat;
@@ -20,11 +20,11 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  @media (max-width: 991px) {
+  grid-gap: 1.875rem;
+  @media (max-width: 61.9375rem) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 641px) {
+  @media (max-width: 40.0625rem) {
     grid-template-columns: repeat(1, 1fr);
   }
 }

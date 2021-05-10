@@ -33,5 +33,5 @@ a {
 
 /* nprogress */
 #nprogress .bar {
-  height: 3px !important;
+  height: 0.1875rem !important;
 }

@@ -5,7 +5,7 @@ export default function WorkFlowCard({ index, title, description }) {
     <div className={styles.WorkFlowCard}>
       <div className={styles.index}> {`0${index + 1}`} </div>
       <h2 className={styles.title}> {title} </h2>
-      <div className={styles.description}> {description} </div>
+      <p className={styles.description}> {description} </p>
     </div>
   );
 }

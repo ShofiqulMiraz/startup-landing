@@ -6,20 +6,20 @@
 .buttonGroupSlider {
   display: flex;
   justify-content: center;
-  margin-bottom: -4px;
-  @media (min-width: 1023px) {
+  margin-bottom: -0.25rem;
+  @media (min-width: 63.9375rem) {
     display: none;
   }
   & > button {
     background: transparent;
-    border: 0px solid;
-    font-size: 40px;
+    border: 0rem solid;
+    font-size: 2.5rem;
     cursor: pointer;
-    padding: 2px;
+    padding: 0.125rem;
     color: #bbc7d7;
     transition: all 0.25s;
     &:hover {
-      color: black;
+      color: #000000;
     }
     &:focus {
       outline: 0;

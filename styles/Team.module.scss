@@ -8,11 +8,11 @@
 .teamGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  @media (max-width: 1024px) {
+  grid-gap: 1.875rem;
+  @media (max-width: 64rem) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 400px) {
+  @media (max-width: 25rem) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -22,11 +22,11 @@
   align-items: center;
   flex-direction: column;
   transition: ease-in-out 0.4s;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   position: relative;
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   &:hover {
-    box-shadow: 0 4px 10px #27537b1f;
+    box-shadow: 0 0.25rem 0.625rem #27537b1f;
     .icon {
       opacity: 1;
     }
@@ -38,17 +38,17 @@
 }
 
 .memberThumb {
-  max-width: 130px;
-  max-height: 130px;
+  max-width: 8.125rem;
+  max-height: 8.125rem;
   flex-shrink: 0;
-  border: 2px solid var(--color-primary);
+  border: 0.125rem solid var(--color-primary);
   border-radius: 50%;
 }
 
 .infoWrapper {
   width: 100%;
   text-align: center;
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .name {
@@ -59,7 +59,7 @@
 }
 
 .designation {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5;
   color: var(--color-secondary);
@@ -67,22 +67,22 @@
 }
 .socialShare {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 0.9375rem;
+  bottom: 0.9375rem;
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.25s;
-  padding-top: 2px;
+  padding-top: 0.125rem;
 }
 
 .icon {
   color: var(--color-primary);
   line-height: 1em;
   transition: all 0.25s;
-  padding-top: 15px;
+  padding-top: 0.9375rem;
   opacity: 0;
   &:hover {
     color: var(--color-primary);
