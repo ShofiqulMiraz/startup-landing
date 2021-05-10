@@ -38,7 +38,7 @@
   border-radius: 50%;
   border-color: transparent;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   &::before {
     position: absolute;
     content: "";
@@ -51,10 +51,10 @@
     border-radius: 50%;
     opacity: 0.5;
     animation: playPluse 1.5s ease-out infinite;
-    background-color: #ea3a60;
+    background-color: var(--color-primary);
   }
   & > span {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #ffffffb3;
     width: 100px;
     height: 100px;
     text-align: center;

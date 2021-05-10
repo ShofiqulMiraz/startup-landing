@@ -29,7 +29,7 @@ function List({ items }) {
       {items.map((item) => (
         <li key={item.id} style={{ display: "flex", marginBottom: "5px" }}>
           <div className={styles.listIcon}>{item.icon}</div>
-          <p style={{ fontWeight: "100" }}>{item.text}</p>
+          <p>{item.text}</p>
         </li>
       ))}
     </ul>

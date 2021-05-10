@@ -1,5 +1,5 @@
 .bottom_area {
-  border-top: 1px solid #646262;
+  border-top: 1px solid var(--color-secondary);
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -20,21 +20,22 @@
 
 .link {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 2px;
   cursor: pointer;
   transition: all 0.35s;
   display: block;
   line-height: 1.5;
   padding: 10px;
-  color: #343d48;
+  color: var(--color-secondary);
   &:hover {
-    color: #ea3a60;
+    color: var(--color-primary);
   }
 }
 
 .copyright {
-  font-size: 15px;
+  font-size: 16px;
   width: 100%;
-  color: #1f262e;
+  font-weight: 700;
+  color: var(--color-secondary);
 }
