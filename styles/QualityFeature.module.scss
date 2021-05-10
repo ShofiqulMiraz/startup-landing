@@ -1,5 +1,5 @@
 .qualityFeature {
-  padding: 6.25rem 0;
+  padding: 10rem 0;
 }
 
 .qualityFeatureHead {
@@ -12,8 +12,8 @@
 .qualityFeatureCardGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3.125rem;
-  @media (max-width: 43.75rem) {
+  grid-gap: 5rem;
+  @media (max-width: 700px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }

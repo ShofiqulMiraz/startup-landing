@@ -1,5 +1,5 @@
 .rating {
-  margin-bottom: 0.0625rem;
+  margin-bottom: 1px;
   & > ul {
     padding-left: 0;
     list-style: none;
@@ -7,7 +7,7 @@
     display: flex;
   }
   & > svg {
-    margin-right: 0.125rem;
+    margin-right: 2px;
     &:last-of-type {
       margin-right: 0;
     }
@@ -15,11 +15,11 @@
 }
 
 .star {
-  margin-right: 0.0625rem;
+  margin-right: 1px;
   color: var(--color-primary);
 }
 
 .star_o {
-  margin-right: 0.0625rem;
+  margin-right: 1px;
   color: #ddd;
 }

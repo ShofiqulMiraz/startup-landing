@@ -1,19 +1,7 @@
 .container {
-  width: 100%;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  width: 95%;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  @media (min-width: 36rem) {
-    max-width: 33.75rem;
-  }
-  @media (min-width: 48rem) {
-    max-width: 45rem;
-  }
-  @media (min-width: 62rem) {
-    max-width: 60rem;
-  }
-  @media (min-width: 75rem) {
-    max-width: 71.25rem;
-  }
 }

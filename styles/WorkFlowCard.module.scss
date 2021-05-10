@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  @media (max-width: 40.0625rem) {
+  @media (max-width: 641px) {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -10,30 +10,30 @@
 }
 
 .index {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 7rem;
+  height: 7rem;
   flex-shrink: 0;
-  border-radius: 1.4375rem;
+  border-radius: 2.3rem;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #234582;
   font-weight: 700;
-  font-size: 1.875rem;
-  margin-bottom: 0.9375rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
-  font-size: 1.0625rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: white;
   line-height: 1.4;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1rem;
 }
 
 .description {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.85;
   color: white;

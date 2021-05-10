@@ -1,28 +1,25 @@
 .cardContainer {
   padding: 0;
   text-align: left;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
 }
 
 .cardImage {
   max-width: 100%;
   height: auto;
-  margin-bottom: -1.25rem;
+  margin-bottom: -2rem;
 }
 
 .cardTitle {
-  margin: 0;
-  min-width: 0;
   line-height: 1.5;
-  font-size: 1.25rem;
-  letter-spacing: -0.0344rem;
+  font-size: 2rem;
   color: var(--color-title);
-  margin-bottom: 0.625rem;
+  margin-bottom: 1rem;
 }
 
 .cardParagraph {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   line-height: 1.8;
 }

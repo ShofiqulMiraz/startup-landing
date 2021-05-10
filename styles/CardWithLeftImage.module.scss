@@ -2,23 +2,23 @@
   padding: 0;
   text-align: left;
   display: flex;
-  gap: 1.25rem;
+  gap: 2rem;
   width: 90%;
 }
 
 .cardImage {
-  margin-top: 0.625rem;
+  margin-top: 1rem;
 }
 
 .cardTitle {
   margin: 0;
   min-width: 0;
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--color-title);
-  margin-bottom: 0.625rem;
+  margin-bottom: 1rem;
 }
 .cardParagraph {
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   line-height: 1.8;
 }

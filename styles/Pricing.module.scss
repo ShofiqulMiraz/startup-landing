@@ -1,5 +1,5 @@
 .pricing {
-  padding: 6.25rem 0;
+  padding: 10rem 0;
 }
 
 .pricingHead {
@@ -12,23 +12,23 @@
 .buttonGroup {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.4375rem;
-  margin-top: -2.1875rem;
+  margin-bottom: 0.7rem;
+  margin-top: -3.5rem;
   position: relative;
   z-index: 2;
 }
 
 .buttonGroupInner {
   display: flex;
-  padding: 0.4375rem;
+  padding: 0.7rem;
   margin: 0 auto;
-  border-radius: 0.3125rem;
+  border-radius: 0.5rem;
   background-color: #f7f8fb;
   button {
     border: 0;
-    padding: 0.9375rem 1.6875rem;
-    border-radius: 0.3125rem;
-    font-size: 1rem;
+    padding: 1.5rem 2.7rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     font-weight: 700;
     background-color: transparent;
@@ -43,7 +43,7 @@
 .activeBtn {
   color: var(--color-title);
   background-color: #fff;
-  box-shadow: 0 0.1875rem 0.25rem rgba(38, 78, 118, 0.1);
+  box-shadow: 0 3px 4px rgba(38, 78, 118, 0.1);
 }
 
 .pricingWrapper {

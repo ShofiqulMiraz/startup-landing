@@ -1,31 +1,44 @@
 .coreFeature {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem;
-  padding-bottom: 3.125rem;
-  @media (max-width: 58.75rem) {
+  grid-gap: 2rem;
+  padding-bottom: 5rem;
+  @media (max-width: 940px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .coreFeatureLeft {
-  padding: 3.125rem;
+  padding: 5rem;
+  @media (max-width: 940px) {
+    text-align: center;
+  }
+  @media (max-width: 590px) {
+    padding: 2rem;
+  }
   h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.4rem;
+    text-align: left;
+    @media (max-width: 940px) {
+      text-align: center;
+    }
+    @media (max-width: 390px) {
+      font-size: 2.5rem;
+    }
   }
 }
 
 .coreFeatureLeftPara {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
   line-height: 1.8;
 }
 
 .coreFeatureRightImage {
   max-width: 100%;
   height: auto;
-  padding: 0 1.25rem;
-  @media (max-width: 58.75rem) {
+  padding: 0 2rem;
+  @media (max-width: 940px) {
     display: flex;
     align-items: center;
     justify-content: center;

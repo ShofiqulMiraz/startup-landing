@@ -1,11 +1,11 @@
 .pricingBox {
-  border-radius: 1.25rem;
+  border-radius: 2rem;
   position: relative;
   transition: all 0.3s;
-  padding: 2.1875rem 1.5625rem;
+  padding: 3.5rem 2.5rem;
   width: 100%;
-  margin: 2.5rem 0.625rem 0.3125rem 0.625rem;
-  min-height: 25.75rem;
+  margin: 4rem 1rem 0.5rem 1rem;
+  min-height: 41.2rem;
   &::before {
     position: absolute;
     content: "";
@@ -13,13 +13,13 @@
     top: 0;
     left: 0;
     height: 100%;
-    border: 0.0625rem solid #264e761a;
+    border: 1px solid #264e761a;
     border-radius: inherit;
     transition: all 0.3s;
     z-index: -1;
   }
   &:hover {
-    box-shadow: 0rem 0.25rem 1.5625rem #264e761a !important;
+    box-shadow: 0px 0.4rem 2.5rem #264e761a !important;
     &::before {
       opacity: 0;
     }
@@ -29,48 +29,54 @@
 .pricingHeader {
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.875rem;
-  p {
-    font-size: 1rem;
+  margin-bottom: 3rem;
+  & > h3 {
+    font-size: 1.8rem;
+  }
+  & > p {
+    font-size: 1.6rem;
   }
 }
 
 .listIcon {
-  width: 1.5625rem;
+  width: 2.5rem;
   height: auto;
   color: var(--color-primary);
   padding: 0;
-  font-size: 1.25rem;
+  font-size: 2rem;
   flex-shrink: 0;
   justify-content: flex-start;
+  & > svg {
+    font-size: 2rem;
+  }
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 0.25rem;
+  padding-top: 0.4rem;
   & > span {
     position: relative;
-    padding-left: 0.1875rem;
+    padding-left: 3px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: normal;
   }
 }
 
 .buttonGroup {
   text-align: center;
-  margin-top: 0.9375rem;
+  margin-top: 1.5rem;
 }
 
 .freeTrial {
   color: var(--color-secondary);
   width: 100%;
   font-weight: 700;
-  font-size: 1rem;
-  padding: 0.3125rem 0;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
   cursor: pointer;
 }
